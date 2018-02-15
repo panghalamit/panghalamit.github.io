@@ -1,6 +1,6 @@
 # Site
 title:              Amit Panghal
-bio:                'To err is human, to debug is divine'
+bio:                'To err is human, to debug divine'
 description:        "Graduate Student at NYU Courant. IITB Alumunus. Technology Enthusiast. Currently Learning about Big Data Systems, Data Science, Machine Learning, Cryptography. "
 reading_time:       true
 words_per_minute:   200
@@ -50,7 +50,6 @@ instagram:          daal_baati
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              username
 #dribbble:          username
 #youtube:           username
 #youtube-channel:   channel
