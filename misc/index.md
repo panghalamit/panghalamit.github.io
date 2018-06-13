@@ -7,6 +7,22 @@ comments: false
 ## Favorites listicles (will update)
 ### Papers
 #### Computer Science
+##### Blockchain Reading List (wip)
+1. Bitcoin: A Peer-to-Peer Electronic Cash System <a href="https://bitcoin.org/bitcoin.pdf">(link)</a>
+2. Ethereum Yellow Paper <a href="https://ethereum.github.io/yellowpaper/paper.pdf">(link)</a>
+3. Practical Byzantine Fault Tolerance <a href="http://pmg.csail.mit.edu/papers/osdi99.pdf">(link)</a>
+4. Raft Consensus Algorithm <a href="https://raft.github.io/raft.pdf">(link)</a>
+5. Paxos <a href="http://lamport.azurewebsites.net/pubs/lamport-paxos.pdf">(link)</a>
+6. BFT Smart <a href="http://www.di.fc.ul.pt/~bessani/publications/dsn14-bftsmart.pdf">(link)</a>
+7. Zyzzyva: Speculative Byzantine Fault Tolerance <a href="http://www.cs.cornell.edu/lorenzo/papers/kotla07Zyzzyva.pdf">(link)</a>
+8. The Honey Badger of BFT Protocols <a href="https://eprint.iacr.org/2016/199.pdf">(link)</a>
+9. OmniLedger: A Secure, Scale-Out, Decentralized Ledger via Sharding <a href="https://eprint.iacr.org/2017/406.pdf">(link)</a>
+10. Hybrid Consensus:  Efficient Consensus in the Permissionless Model <a href="https://eprint.iacr.org/2016/917.pdf">(link)</a>
+11. The sleepy Model of Consensus <a href="https://eprint.iacr.org/2016/918.pdf">(link)</a>
+12. Thunderella:  Blockchains with Optimistic Instant Confirmation <a href="https://eprint.iacr.org/2017/913.pdf">(link)</a>
+13. Algorand: Scaling Byzantine Agreements for Cryptocurrencies <a href="https://people.csail.mit.edu/nickolai/papers/gilad-algorand-eprint.pdf">(link)</a>
+14. FruitChains: A Fair Blockchain <a href="https://eprint.iacr.org/2016/916.pdf">(link)</a>
+
 
 #### Non Computer Science
 
