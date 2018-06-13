@@ -7,7 +7,7 @@ comments: false
 ## Favorites listicles (will update)
 ### Papers
 #### Computer Science
-##### Blockchain Reading List (wip)
+#### Blockchain Reading List (wip)
 1. Bitcoin: A Peer-to-Peer Electronic Cash System <a href="https://bitcoin.org/bitcoin.pdf">(link)</a>
 2. Ethereum Yellow Paper <a href="https://ethereum.github.io/yellowpaper/paper.pdf">(link)</a>
 3. Practical Byzantine Fault Tolerance <a href="http://pmg.csail.mit.edu/papers/osdi99.pdf">(link)</a>
