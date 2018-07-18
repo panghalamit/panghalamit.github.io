@@ -1,1 +1,157 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-06-12T22:21:09-04:00</updated><id>http://localhost:4000/</id><title type="html">Amit Panghal</title><subtitle>Graduate Student at NYU Courant. IITB Alumunus. Technology Enthusiast. Currently Learning about Big Data Systems, Data Science, Machine Learning, Cryptography. </subtitle></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-07-18T16:14:46-04:00</updated><id>http://localhost:4000/</id><title type="html">Amit Panghal</title><subtitle>Student @NYU Courant | IIT Bombay | Blockchain | Security | Cryptography | Machine Learning</subtitle><entry><title type="html">A brief history of e-currencies</title><link href="http://localhost:4000/A-brief-history-of-e-currencies/" rel="alternate" type="text/html" title="A brief history of e-currencies" /><published>2018-07-16T00:00:00-04:00</published><updated>2018-07-16T00:00:00-04:00</updated><id>http://localhost:4000/A-brief-history-of-e-currencies</id><content type="html" xml:base="http://localhost:4000/A-brief-history-of-e-currencies/">&lt;p&gt;This blog post is summary of more detailed chapters about the same topic in the &lt;a href=&quot;https://bitcoinbook.cs.princeton.edu/&quot;&gt;book&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;traditional-financial-systems&quot;&gt;Traditional Financial Systems&lt;/h2&gt;
+
+&lt;h3 id=&quot;barter---cash---credit&quot;&gt;Barter -&amp;gt; Cash -&amp;gt; Credit&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Barter : difficult to make the coordination where everyone finds what he needs based on what he/she is willing to exchange&lt;/li&gt;
+  &lt;li&gt;Credit Based System : Goods and Services are received in exchange of favour/promise. Receiving Party has a debt, which it needs to settle in future. No way to quantify the favour. Risk is introduced in the system.&lt;/li&gt;
+  &lt;li&gt;Cash Based system : Goods and Services are received in exchange of Cash. Good and Services are quantified using cash. System need to bootstrapped with cash to work.&lt;/li&gt;
+  &lt;li&gt;Cash+Credit : Cash is used to quantify debt/favour in credit based systems.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ideas-in-context-of-an-online-p2p-file-sharing-system&quot;&gt;Ideas in context of an online p2p file sharing system&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Addressing “Freeloaders”, downloading but not sharing files&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Mnet_(peer-to-peer_network)&quot;&gt;Mojonation&lt;/a&gt; and Karma, solves using virtual cash or karma, receive some cash on sending some file, and spend that cash upon receiving.&lt;/li&gt;
+  &lt;li&gt;These are ancestors of current protocols like BitTorrent, Tahoe-LAFS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Online payment systems existing today can be grouped into credit and cash based groups. While credit cards transactions account for majority of payments online.
+How that works? Well, you send your credit card details to companies like Amazon and they send your details to system which includes and not limited to Banks, processors, credit card companies. Another architecture is similar to paypal, where there is an intermediatory between buyer and seller, buyer sends credit card details to intermediatory which approves the transaction, notifies seller. Intermediatory settles balances with seller at the end of the day. With this architecture you avoid a sending your credit card details to seller which could be a security risk. It could also improve privacy, if you dont have to give your identity to seller. Drawbacks are complexity and that seller and buyer must have same intermediatory. 
+Early web of 90s when privacy concerns were high amount users, technologies involving intermediatories were of great interest. Let go through some of the early attempts.&lt;/p&gt;
+
+&lt;h3 id=&quot;firstvirtual-1994&quot;&gt;FirstVirtual 1994&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;First company with virtual office, employees spread across country communicating over internet&lt;/li&gt;
+  &lt;li&gt;Similar to paypal but communication using email&lt;/li&gt;
+  &lt;li&gt;Buyer and seller both send transaction detail to intermediatory and bills customer and on confirmation, seller is notified&lt;/li&gt;
+  &lt;li&gt;90 days to settle consumer dispute&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;set-architecture&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Secure_Electronic_Transaction&quot;&gt;SET&lt;/a&gt; ARCHITECTURE&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;You send your view of transactions encrypted to Seller&lt;/li&gt;
+  &lt;li&gt;Seller Forwards encrypted view with its own view to an intermediatory&lt;/li&gt;
+  &lt;li&gt;Intermediatory decrypts your view and verfies if both views are same and approves Transaction&lt;/li&gt;
+  &lt;li&gt;Developed by VISA and Mastercard along with Tech giants during that time&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;cybercash&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/CyberCash&quot;&gt;CYBERCASH&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Implemented SET Architecture for credit card processing&lt;/li&gt;
+  &lt;li&gt;Also had a digital cash product, CyberCoin for micropayments&lt;/li&gt;
+  &lt;li&gt;Upper cap of 10 dollars worth of CyberCoin&lt;/li&gt;
+  &lt;li&gt;Was affected by y2k bug - lead to double billing&lt;/li&gt;
+  &lt;li&gt;Bankrupt in 2001 and IP was acquired by VeriSign which was resold to Paypal&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Why SET didnt work ?&lt;/p&gt;
+
+&lt;p&gt;Problem of certificates. All users, merchants had to get digital certificates from company like VeriSign which was inconvenient for users.&lt;/p&gt;
+
+&lt;p&gt;Moving on from Credit to Cash. Cash offers additional advantages over credit :&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Anonymity : Credit based systems are tied to banks and hence they can track your spendings&lt;/li&gt;
+  &lt;li&gt;Offline Transactions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;e-cash-systems&quot;&gt;E-cash systems&lt;/h2&gt;
+&lt;p&gt;Consider this simple physical analogy of a cash system. I issue a piece of paper with my signature on it which says “Bearer of this note can redeem X dollars by presenting it to me”. If people trust that I will keep my promise and my signature is unforgeable, these papers can pass on as bank notes. Now lets assume that people can make perfect copies of these notes and it is difficult to distinguish between original and copy. They can make copies and pass on to different people. This is called double spending problem. 
+How do we solve it?
+Well we can use unique serial numbers i.e, I write unique number on the paper when I issue it and record it in my ledger. So when someone spends it, the receiver will call me and give the serial number and I will mark it as spent in my ledger. Receiver can later come to me and get new notes with unique serial number in exchange of spent ones. 
+Do you see the problem with this? 
+We lost the feature that cash offers, anonymity. I can keep track of all the places you are spending your money. Well how do we solve it then?&lt;/p&gt;
+
+&lt;h3 id=&quot;chaums-proposal-and-further-improvements&quot;&gt;Chaum’s Proposal and Further Improvements&lt;/h3&gt;
+&lt;p&gt;Chaum’s idea was to use &lt;a href=&quot;http://www.hit.bme.hu/~buttyan/courses/BMEVIHIM219/2009/Chaum.BlindSigForPayment.1982.PDF&quot;&gt;blind signatures&lt;/a&gt;. That is when I issue you note you choose a random number such that I cant see it and I sign it. Choosing a number such a way that it is highly unlikely that it has been picked before. This guarantees Anonymity and prevents double spending.&lt;/p&gt;
+
+&lt;p&gt;Chaum with collaboration with other cryptographers Fiat and Naor came up with offline &lt;a href=&quot;https://link.springer.com/chapter/10.1007/0-387-34799-2_25&quot;&gt;e-cash&lt;/a&gt; scheme. This clever idea revolves around detecting double spending rather than protecting it. Which could be then followed by attempts to recover or punish the perpetrator. If you think about it, it is what traditional finance system do, i.e., if you write someone a personal cheque, they have no guarantee that money is in their account but they can come after you if cheque bounces. If such offline were widely adopted, double spending would be recognized as a crime.
+Their scheme worked like this: every digital coin issued to you encodes your identity in way that no one except you can decode it, not even the bank. So every time you want to spend it, recipient ask you to decode a random subset of your encoding and they keep a record of it. This information alone doesnt reveal your identity but if you were to double spend it, both recepients can go to bank with their subset of decodings and bank can put these together to identify you and take actions accordingly. You cannot frame someone as double spender, i.e try to spend coin upon receipt without going to the bank. Because you wont be able to decode random subset upon request when you try to spend it.&lt;/p&gt;
+
+&lt;h3 id=&quot;digicash&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/DigiCash&quot;&gt;Digicash&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;It is company that came out of Chaum-Fiat-Naor scheme founded by Chaum in 1989. The cash in the system was Ecash. It works the following way&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Clients are anonymous but Merchant’s aren’t. Merchants have to return coin to the bank as soon as they receive them.&lt;/li&gt;
+  &lt;li&gt;Coins can’t be split, so banks issue different kind of denominations, for you to pay for exact amount  of a transactions.&lt;/li&gt;
+  &lt;li&gt;You click on payment link, it takes you to digicash website which creates a reverse connection to your computer and starts digicash software on it. you apporve the transaction and send the money.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;why did it fail ?&lt;/p&gt;
+
+&lt;p&gt;Banks and merchants didnt adopt it. since there werent many merchants that accepted e-cash, users didnt want it either. It also didnt support user-user transactions.&lt;/p&gt;
+
+&lt;p&gt;Digicash also experimented with tamper resistant hardware to prevent double spending. Sort of chip card and a device which keep track of your balance which decreases when you spend and increases when load it with money. This counter was was very difficult to tamper with physically.&lt;/p&gt;
+
+&lt;h3 id=&quot;mondex-system&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Mondex&quot;&gt;Mondex&lt;/a&gt; system&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;A smart card and a Wallet unit.&lt;/li&gt;
+  &lt;li&gt;Either could be loaded with cash.&lt;/li&gt;
+  &lt;li&gt;User-User swap happened using wallet, put money into wallet by insertng card and receiver put their card in the wallet and load money onto card.&lt;/li&gt;
+  &lt;li&gt;Anonymous way to exchange digital cash.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Issues with Mondex : slow and clunky, and retailer hated having separate payment terminals&lt;/p&gt;
+
+&lt;p&gt;However, the smart card technology prevailed. Not for preventing double spending but to be used as authentication mechanism. That is you know the pin associated with your account.&lt;/p&gt;
+
+&lt;h2 id=&quot;minting-money-in-digital-systems&quot;&gt;Minting Money in digital systems&lt;/h2&gt;
+&lt;p&gt;To create a free-floating digital currency which is likely to acquire real value, you need something which is scarce by design. This is why gold/diamonds have been used as a backing for money. 
+In digital ecosystems, one way to achieve scarcity is by requiring to solve a computational puzzle that takes some time to crack to mint digital money.&lt;/p&gt;
+
+&lt;h3 id=&quot;dwork-and-naor-scheme-1992&quot;&gt;&lt;a href=&quot;https://dl.acm.org/citation.cfm?id=705669&quot;&gt;Dwork and Naor Scheme&lt;/a&gt; (1992)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;solution to combat email spams&lt;/li&gt;
+  &lt;li&gt;reuqires you to solve mini computational puzzles every time your sending an email&lt;/li&gt;
+  &lt;li&gt;Heavy cost for spammer who is try to send million emails&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;hashcash-1997&quot;&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Hashcash&quot;&gt;Hashcash&lt;/a&gt; (1997)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Proposed by Adam Back&lt;/li&gt;
+  &lt;li&gt;Puzzles specific to email: based on sender, receiver and content and time which makes it impossible for spammers to reuse puzzle solutions&lt;/li&gt;
+  &lt;li&gt;Puzzle independence&lt;/li&gt;
+  &lt;li&gt;difficulty adjustment by recipients&lt;/li&gt;
+  &lt;li&gt;Bitcoin uses similar puzzles with minor variation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Why Hashcash didnt catch on ?&lt;/p&gt;
+
+&lt;p&gt;Email spams arent that big of a problem. Good spam filters in place today.&lt;/p&gt;
+
+&lt;h2 id=&quot;secure-timestamping&quot;&gt;Secure Timestamping&lt;/h2&gt;
+&lt;p&gt;The goal of timestamping is to give an approximate idea of when a document came into existense. It could convey the order in which they are created. The security property ensures the timestamps cant be changed after.
+These were ideas that might have lead up to blockchain, ledger in which transaction are securely recorded.&lt;/p&gt;
+
+&lt;h3 id=&quot;haber-and-stornettas-scheme&quot;&gt;Haber and Stornetta’s &lt;a href=&quot;https://www.anf.es/pdf/Haber_Stornetta.pdf&quot;&gt;scheme&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Timestamping service which receives the document to timestamp&lt;/li&gt;
+  &lt;li&gt;Service creates a certificate by signing the document with current time and a link/pointer  to previous document.&lt;/li&gt;
+  &lt;li&gt;Each document ensures integrity of the contents of Next one,&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Later proposals improve on efficiency by grouping documents in blocks and linking the blocks together in a chain. Within each block, link documents in a tree like structure. This data structure forms skeleton of Bitcoin’s blockchain.&lt;/p&gt;
+
+&lt;h2 id=&quot;combining-computational-puzzles-and-secure-timestamping&quot;&gt;Combining computational puzzles and secure timestamping&lt;/h2&gt;
+
+&lt;h3 id=&quot;b-money&quot;&gt;&lt;a href=&quot;http://www.weidai.com/bmoney.txt&quot;&gt;B-money&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Proposed by Wei Dai in 1998&lt;/li&gt;
+  &lt;li&gt;Money is minted using hashcash like puzzles&lt;/li&gt;
+  &lt;li&gt;Solutions include solution to previous solution i.e, new coin is linked to previously minted coin&lt;/li&gt;
+  &lt;li&gt;p2p system with every node having its own ledger&lt;/li&gt;
+  &lt;li&gt;Solution to puzzles is propogated and everyone increment solver’s balance in their ledger&lt;/li&gt;
+  &lt;li&gt;Similarly transactions are propogated&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;bitgold&quot;&gt;&lt;a href=&quot;&quot;&gt;Bitgold&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Proposed by Nick Szabo in series of blog posts&lt;/li&gt;
+  &lt;li&gt;Similar to b-money&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Both B-money and Bitgold doesnt reveal in detail about how to solve issues like resolving disagreements with ledger.&lt;/p&gt;
+
+&lt;p&gt;In Next series of blogs, I will write about cyptographic methods, consensus algorithms used in bitcoin and other altcoins. I also plan to write some dev-friendly blog-posts for getting started with smart-contract on various platforms.&lt;/p&gt;</content><author><name></name></author><category term="cryptocurrencies" /><category term="bitcoin" /><category term="history" /><category term="bitcoinbook.cs.princeton.edu" /><summary type="html">Digital cash system attempts before bitcoin.</summary></entry></feed>
