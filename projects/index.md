@@ -42,6 +42,7 @@ comments: false
 * Classification using cosine similarity of word2vec representation of documents
 
 ## Completed @ Samsung Research India
+
 ### Transmission Time Estimator for cloud applications in Smartphone
 * Estimated time taken to upload/download media files on smartphone using Machine Learning.
 * Wrote appllication for data collection in wild.
@@ -59,17 +60,21 @@ comments: false
 * Service to piggyback background transmissions with foreground date traffic in android.
 
 ## Completed @ IIT Bombay
+
 ### BattMan : Communication framework leveraging inaudible frequencies
 * Studied GPS duty cycling techniques in crowdsensing
 * Analyzed feasibility acoustic communication in Crowdsensing scenario
 * Android application for sending and receiving messages using inaudible frequencies. 
+
 ### Simulator for Dynamic Server Allocation on virtual clusters using markov decision process
 * Developed simulator to test Policies for virtual machine migration on a Data centre given migration costs and SLA costs.
 * Optimized peformance of simulator using reduced state representation.
+
 ### Automated Performance Testing framework for web servers
 * Wrote services to add custom load patterns for performance testing of webservers.
 
 ## Completed @ SICS, Sweden
+
 ### Low power network protocol for sensor networks
 * Data Transfer Protocol to transfer sensor data periodically from sensor nodes.
 * Finite state machine implementation on Contiki OS for fault tolerance.  
