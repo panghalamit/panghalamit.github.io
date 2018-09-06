@@ -7,7 +7,7 @@ comments: false
 
 ## Personal Projects
 
-### InnerCircle : A decentralized application on ethereum for creating pop-up events
+### InnerCircle: A decentralized application on ethereum for creating pop-up events
 * Developed as part of two-day hackathon organized by Consensys.
 * Application developed using React, Solidity and Linnia protocol.
 * Creating meaningful engagement similar to word of mouth by allowing anyone to create an event and invite trusted/loyal inner circle of members.
@@ -15,10 +15,11 @@ comments: false
 * [Try it yourself]({{"https://vutsalsinghal.github.io/linnia-hackathon/"}})
 * code is open source and available [here]({{"https://github.com/vutsalsinghal/linnia-hackathon"}})
 
+### Booklyn: Decentralized e-book exchanges on top of ethereum
 
 ## Completed @ NYU
 
-### Books2Rec : Book Recommender System For Goodreads
+### Books2Rec: Book Recommender System For Goodreads
 * As part of Big Data Science class by Prof. Anasse Bari.
 * Hybrid Recommender System using Latent Factors from Reader-Book interaction and content based features for books metadata.
 * Looking for recommendations for books to read, try our [website]({{"https://books2rec.me"}})
@@ -61,7 +62,7 @@ comments: false
 
 ## Completed @ IIT Bombay
 
-### BattMan : Communication framework leveraging inaudible frequencies
+### BattMan: Communication framework leveraging inaudible frequencies
 * Studied GPS duty cycling techniques in crowdsensing
 * Analyzed feasibility acoustic communication in Crowdsensing scenario
 * Android application for sending and receiving messages using inaudible frequencies. 

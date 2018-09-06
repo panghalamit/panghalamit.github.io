@@ -8,8 +8,8 @@ comments: false
 ### Papers
 #### Computer Science
 #### Distributed Systems (from the NYU Class)
-1. Time, Clocks, and the Ordering of Events in a Distributed System <a "https://lamport.azurewebsites.net/pubs/time-clocks.pdf">(link)</a>
-2. Defining Liveness <a "https://www.cs.cornell.edu/fbs/publications/defliveness.pdf">(link)</a> 
+1. Time, Clocks, and the Ordering of Events in a Distributed System <a href="https://lamport.azurewebsites.net/pubs/time-clocks.pdf">(link)</a>
+2. Defining Liveness <a href="https://www.cs.cornell.edu/fbs/publications/defliveness.pdf">(link)</a> 
 
 #### Blockchain Reading List (wip)
 1. Bitcoin: A Peer-to-Peer Electronic Cash System <a href="https://bitcoin.org/bitcoin.pdf">(link)</a>
