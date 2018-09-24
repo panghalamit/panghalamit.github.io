@@ -5,10 +5,10 @@ tags: [MS CS, IITB, NYU, Computer Science]
 comments: false
 ---
 
-Graduate Student at NYU Courant. Technology Enthusiast. Currently Learning about Big Data Systems, Distributed Systems, Security and Crypotgraphy. Prior to joining graduate program at NYU, I worked at Samsung Research India, Bangalore for 3 years with Communication Research Team. I completed my B.Tech. in Computer Science and Engineering from IIT Bombay in 2014.
+Graduate Student at NYU Courant. Technology Enthusiast. Currently Learning about Big Data Systems, Distributed Systems, Security and Applied Crypotgraphy. Prior to joining graduate program at NYU, I worked at Samsung Research India, Bangalore for 3 years with Communication Research Team. I completed my B.Tech. in Computer Science and Engineering from IIT Bombay in 2014.
 you can download my [CV]({{ "/assets/AmitCV.pdf" | absolute_url }}) here.
 
-### Courses @ NYU\
+### Courses @ NYU
 * [Distributed Systems]({{"https://cs.nyu.edu/courses/fall18/CSCI-GA.3033-002/"}}) by Prof. Aurojit Panda
 * [Applied Cryptography and Network Security]({{"https://cs.nyu.edu/kedem/3205/3205.pdf"}}) by Prof. Zvi Kedem
 * [Cryptocurrencies and Decentralized Ledgers]({{"https://cs.nyu.edu/courses/fall18/CSCI-GA.3033-019/"}}) by Prof. Joseph Bonneau
