@@ -2,7 +2,7 @@
 layout: post
 title: "Demystifying Authentication"
 date: 2018-09-24
-excerpt: "How good is MFA"
+excerpt: "How good is MFA?"
 tags: [Authentication, Fido, Authenticator, Authy, digital, cryptography, security]
 comments: true
 ---
