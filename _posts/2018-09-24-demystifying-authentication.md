@@ -31,7 +31,7 @@ A better approach is to use passphrases which are easy to remember and have high
 </figure>
 
 ## One Time Passwords
-One Time Passwords provide timeliness guarantees which help authentication protocols to counter replay attacks. These protocols use one of following time varainat parameters. 
+One Time Passwords provide timeliness guarantees which help authentication protocols to counter replay attacks. These protocols use one of following time variant parameters. 
 1. Random Numbers: used in challenge-repsonse type authentication protocols where one party sends a newly generated nonce to other party and subsequent message are bound to this nonce. This demands for parties to store nonce during one instance of protocol execution
 2. Sequence Numbers: This requires parties to maintain state and state is incremented with every execution.
 3. Timestamps : Timestamps are included along with messages and messages that are not within a minimum threshold of local clock are discarded. This assume client and server clocks are synchronized and is vulnerable to adversial resetting of clocks.
