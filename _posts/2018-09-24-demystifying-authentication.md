@@ -49,7 +49,7 @@ __Symmetric Key__ based techniques rely on secure exchanges of keys and secrecy 
 
 __Public Key__ based techniques involve either decryption of challenge encrypted by public key or digitally signing of challenges to prove knowledge of the private key.
 
-__Zero Knowledge Authentication__ based protocols provide Prover ability to prove his knowledge of secret key to verify without revealing zero information about key in the process. These protocols use three steps. In step one, prover commits to a value by sending a commitment to verifier. Verifier sends a challenge to prover. Prover responds to the challenge using the secret and the value he commited in step 1. Finally, verifier check if response is valid by using commitment and Prover's public information. 
+__Zero Knowledge Authentication__ based protocols provide Prover ability to prove his knowledge of secret key to verifier without revealing zero information about key in the process. These protocols use three steps. In step one, prover commits to a value by sending a commitment to verifier. Verifier sends a challenge to prover. Prover responds to the challenge using the secret and the value he commited in step 1. Finally, verifier check if response is valid by using commitment and Prover's public information. 
 
 [FIDO](https://fidoalliance.org/fido2/) publishes standards for web services to use strong authentication. They encourage using public key based challenge response with an additional factor. Google's security key(tempor resistant usb key device) is compliant with fido standard. The typical flow is 
 1. User registers on FIDO compliant web service (bank website), which prompts user to insert usb key and press a button.
@@ -65,7 +65,7 @@ While this looks good, (No typing/remembering passwords) and safe against passow
 Also, another kind of authentication that we havent talked about is called "Continuous Authentication". It usually works by monitoring user behaviour and access patterns during a session, and logging user out if unusual activity is detected. It is very difficult to get it right and contradicts usability if honest users are denied access.
 
 A very _critical vulnerability_ in the authentication systems is the recovery mechanism deployed when a honest user loses access to his/her crendential. Here is where tradeoff is made between usability and security. Key recovery mechanism are usually exploited by using __social engineering__ techniques. 
-Security in practice follows something is better than nothing and try to minimize the attack surface while ensuring usability. 
+Security in practice follows 'something is better than nothing' and try to minimize the attack surface while ensuring usability. 
 
 ## References
 1. Handbook of Applied Cryptography, Alfred J. Manezes, Paul C. van Oorschot, Scott A. Vanstone 
