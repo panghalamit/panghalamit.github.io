@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-09-24T00:18:07-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Amit Panghal</title><subtitle>Student @NYU Courant | IIT Bombay | Distributed Systems | Security | Applied Cryptography | Blockchain</subtitle><entry><title type="html">A brief history of e-currencies</title><link href="http://localhost:4000/A-brief-history-of-e-currencies/" rel="alternate" type="text/html" title="A brief history of e-currencies" /><published>2018-07-16T00:00:00-04:00</published><updated>2018-07-16T00:00:00-04:00</updated><id>http://localhost:4000/A-brief-history-of-e-currencies</id><content type="html" xml:base="http://localhost:4000/A-brief-history-of-e-currencies/">&lt;p&gt;This blog post is summary of more detailed chapters about the same topic in the &lt;a href=&quot;https://bitcoinbook.cs.princeton.edu/&quot;&gt;book&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-06T03:18:22-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Amit Panghal</title><subtitle>Student @NYU Courant | IIT Bombay | Distributed Systems | Security | Applied Cryptography | Blockchain</subtitle><entry><title type="html">Demystifying Authentication</title><link href="http://localhost:4000/demystifying-authentication/" rel="alternate" type="text/html" title="Demystifying Authentication" /><published>2018-09-24T00:00:00-04:00</published><updated>2018-09-24T00:00:00-04:00</updated><id>http://localhost:4000/demystifying-authentication</id><content type="html" xml:base="http://localhost:4000/demystifying-authentication/">&lt;h2 id=&quot;notes-on-authentication&quot;&gt;Notes on authentication&lt;/h2&gt;
+
+&lt;p&gt;Authentication is a mechanism to guarantee that entities are who they claim they are, or that the information has not been modified by unauthorized parties. In this post I am talking about entity authentication which is also referred to as identification. Entity authentication techniques assures one party through acquisition of corroborative evidence, of both the identity of a second party involved, and that the second was active at the time evidence was created or acquired. For example, when you are trying to access your bank account online through your bank’s website, You are asked to enter login credentials, your username and password, or may be some other information say some numbers on your credit/debit card. Bank identifies you through the credentials and this particular type of authentication is unilateral authentication where Bank is trying to identify you in order to give access to their services. Another simple example is you talking to your friend on phone, you and your friend identify each other through voice recognition. It is an example of Mutual Authentication.&lt;/p&gt;
+
+&lt;p&gt;Any such protocol between two parties say Alice and Bob should achieve following objectives:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Alice is able to successfully authenticate herself to Bob, and Bob at the end of protocol accepts Alice’s Identity.&lt;/li&gt;
+  &lt;li&gt;Bob should not be able to use the exchange with Alice, to successfully impersonate Alice to an another party Carol.&lt;/li&gt;
+  &lt;li&gt;Mallory should not be able to identify herself as Alice to Bob. The probability that this happens should be negligible.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Entity Authentication can be majorly divided into three categories:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Something You Know&lt;/strong&gt; (Knowledge Based): These include knowledge of a secret. The secret could be standard passwords, personal identification numbers (PINs) and the secret or private keys whose knowledge is demonstrated in challenge-response protocols.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Something You Own&lt;/strong&gt; (ownership): These could be the physical accesories that one might own. for example, magnetic stripe and chip cards, your smartphone, tamper resistant hardware storing key etc.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Something You Are&lt;/strong&gt; : This includes methods which make use of physical human characteristics and biometrics, such as handwritten signatures, fingerprints, voice, retina patterns, and even dynamic keyboarding characteristics.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Entity Authentication is generally used to facilitate access control to a resource or a service, where access privilege is linked to a particular identity. Most common method that is used is password based (belongs to 1st category) and also referred to as weak authentication. The password usually serves a shared secret between user and system. The way information about password is stored on the on the system, and how it is used later to verify the password entered by user determines the possible attacks on the scheme. The Most common way is to store &lt;a href=&quot;https://en.wikipedia.org/wiki/Cryptographic_hash_function&quot;&gt;cryptographic hash&lt;/a&gt; of salted password along with the salt.
+The ‘salting of password’ means using adding a fixed size random &lt;a href=&quot;https://en.wikipedia.org/wiki/Cryptographic_nonce&quot;&gt;nonce&lt;/a&gt; to password. Salting makes &lt;a href=&quot;https://en.wikipedia.org/wiki/Dictionary_attack&quot;&gt;dictionary based attacks&lt;/a&gt; harder. What does it mean? Lets say salt is of size 12 bits, so an attacker creating offline dictionary attack would have store all 4096 possible variants of a single guess. If it is remote authentication, passwords are sent in cleartext over a secure channel. If channel is unsecure such schemes are also susceptible to replay attacks (even if you hash and send your password), where adversary learns about hash or cleartext when it is in transit and can use for future authentication. Passwords normally used are sequence of characters with additional minimum requirements placed by server for its strength. But users tend to set passwords with low entropy and hence are easy to guess. Check this &lt;a href=&quot;http://www.jbonneau.com/doc/B12-IEEESP-analyzing_70M_anonymized_passwords.pdf&quot;&gt;paper&lt;/a&gt; from Prof. Bonneau which analyzes millions of passwords used by yahoo users anonymously and proposes several guessing heuristics. 
+A better approach is to use passphrases which are easy to remember and have higher entropy than random strings of fixed length.&lt;/p&gt;
+&lt;figure&gt;
+    &lt;a href=&quot;https://imgs.xkcd.com/comics/password_strength.png&quot;&gt;&lt;img src=&quot;https://imgs.xkcd.com/comics/password_strength.png&quot; /&gt;&lt;/a&gt;
+    &lt;figcaption&gt;on password strength&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h2 id=&quot;one-time-passwords&quot;&gt;One Time Passwords&lt;/h2&gt;
+&lt;p&gt;One Time Passwords provide timeliness guarantees which help authentication protocols to counter replay attacks. These protocols use one of following time variant parameters.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Random Numbers: used in challenge-response type authentication protocols where one party sends a newly generated nonce to other party and subsequent message are bound to this nonce. This demands for parties to store nonce during one instance of protocol execution&lt;/li&gt;
+  &lt;li&gt;Sequence Numbers: This requires parties to maintain state and state is incremented with every execution.&lt;/li&gt;
+  &lt;li&gt;Timestamps : Timestamps are included along with messages and messages that are not within a minimum threshold of local clock are discarded. This assume client and server clocks are synchronized and is vulnerable to adversarial resetting of clocks.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In practice, One Time Passwords are used along with other password based (weak authentication) techniques, to confirm User’s ownership of a device (a smartphone). This is most common 2FA (2 Factor) authentication in practice, out of band 2 factor authentication. The one time password generated at server is distributed to user’s registered devices. It could be done by a phone call or SMS. SMS based methods have deprecated and has been discouraged to use by NIST as of June 2016. It is due to ability of SMSs to be intercepted at a large scale.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm&quot;&gt;TOTP&lt;/a&gt; uses both timestamps and sequence numbers, is used in &lt;a href=&quot;https://github.com/google/google-authenticator&quot;&gt;Google Authenticator&lt;/a&gt;, &lt;a href=&quot;https://authy.com/&quot;&gt;Authy&lt;/a&gt; and as part of 2 step verification in most of the web services.&lt;/p&gt;
+
+&lt;p&gt;TOTP allows for users to generate one time passwords locally on their smartphone without network using TOTP applications.  For TOTP, you have one time set up phase and authentications. During set up, user registers with server, and server generates a secret which could be entered on TOTP application on smartphone. After this initial steup, you could just use otps generated on your device to login to server.&lt;/p&gt;
+
+&lt;h2 id=&quot;strong-authentication&quot;&gt;Strong Authentication&lt;/h2&gt;
+&lt;p&gt;Cryptographic Challenge Response based protocol typically fall under this category. The general idea is to enable Prover to prove his knowledge of the secret without revealing the secret itself to the verifier during protocol. This is done by providing a response to time variant challenge, this response is depends both on prover’s secret and the challenge. Someone listening on the link between prover and verifier would not be able to use it for subsequent authentication as each time there would be a different challenge.
+Challenge response protocols are based on Symmetric key techniques, Public-key techniques and zero knowledge based.
+&lt;strong&gt;Symmetric Key&lt;/strong&gt; based techniques rely on secure exchanges of keys and secrecy of keys. There are different implementations based on different kind of time variant parameters as challenges. Usually involved encryption/decryption or keyed hashing of challenge strings.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Public Key&lt;/strong&gt; based techniques involve either decryption of challenge encrypted by public key or digitally signing of challenges to prove knowledge of the private key.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Zero Knowledge Authentication&lt;/strong&gt; based protocols provide Prover ability to prove his knowledge of secret key to verifier without revealing any information about key in the process. These protocols use three steps. In step one, prover commits to a value by sending a commitment to verifier. Verifier sends a challenge to prover. Prover responds to the challenge using the secret and the value he commited in step 1. Finally, verifier check if response is valid by using commitment and Prover’s public information.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://fidoalliance.org/fido2/&quot;&gt;FIDO&lt;/a&gt; publishes standards for web services to use strong authentication. They encourage using public key based challenge response with an additional factor. Google’s security key(tamper resistant usb key device) is compliant with fido standard. The typical flow is&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;User registers on FIDO compliant web service (bank website), which prompts user to insert usb key and press a button.&lt;/li&gt;
+  &lt;li&gt;New key pairs are generated locally, private key is on usb key and public key is registered on bank website.&lt;/li&gt;
+  &lt;li&gt;Assuming browsers are FIDO Compliant, when accessing the website, a call is made which is same for all browser, which prompts user to use usb key.&lt;/li&gt;
+  &lt;li&gt;Response is generated locally using the private key and send to website.&lt;/li&gt;
+  &lt;li&gt;User can access the service if response is valid.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Instead of hardware usb key, other second factor devices say smartphone could be used. Keys could be stored locally on device and can be unlocked by binding device to user by using a another layer, say fingerprint scanner (biometrics) to unlock keys locally and send the response to desktop via bluetooth or NFC.&lt;/p&gt;
+
+&lt;p&gt;While this looks good, (No typing/remembering passwords) and safe against passowrd phishing, but is still susceptible to session hijacking (Once the user has logged in).&lt;/p&gt;
+
+&lt;p&gt;Also, another kind of authentication that we havent talked about is called “Continuous Authentication”. It usually works by monitoring user behavior and access patterns during a session, and logging user out if unusual activity is detected. It is very difficult to get it right and contradicts usability if honest users are denied access.&lt;/p&gt;
+
+&lt;p&gt;A very &lt;em&gt;critical vulnerability&lt;/em&gt; in the authentication systems is the recovery mechanism deployed when a honest user loses access to his/her credentials. Here is where tradeoff is made between usability and security. Key recovery mechanism are usually exploited by using &lt;strong&gt;social engineering&lt;/strong&gt; techniques. 
+Security in practice follows ‘something is better than nothing’ and try to minimize the attack surface while ensuring usability.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Handbook of Applied Cryptography, Alfred J. Manezes, Paul C. van Oorschot, Scott A. Vanstone&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="Authentication" /><category term="Fido" /><category term="Authenticator" /><category term="Authy" /><category term="digital" /><category term="cryptography" /><category term="security" /><summary type="html">How good is MFA?</summary></entry><entry><title type="html">A brief history of e-currencies</title><link href="http://localhost:4000/A-brief-history-of-e-currencies/" rel="alternate" type="text/html" title="A brief history of e-currencies" /><published>2018-07-16T00:00:00-04:00</published><updated>2018-07-16T00:00:00-04:00</updated><id>http://localhost:4000/A-brief-history-of-e-currencies</id><content type="html" xml:base="http://localhost:4000/A-brief-history-of-e-currencies/">&lt;p&gt;This blog post is summary of more detailed chapters about the same topic in the &lt;a href=&quot;https://bitcoinbook.cs.princeton.edu/&quot;&gt;book&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;traditional-financial-systems&quot;&gt;Traditional Financial Systems&lt;/h2&gt;
 
