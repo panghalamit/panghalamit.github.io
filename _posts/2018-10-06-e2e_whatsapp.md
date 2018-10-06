@@ -2,7 +2,7 @@
 layout: post
 title: "How it works?: Whatsapp's E2E Encryption"
 excerpt: "How does signal protocol work?"
-date: 2018-09-12
+date: 2018-10-06
 tags: [whatsapp, Signal Protocol, cryptography, security]
 comments: true
 ---
